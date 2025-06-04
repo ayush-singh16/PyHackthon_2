@@ -29,3 +29,9 @@ AI-Powered Medical Diagnosis
    streamlit run app.py
    ```
 3. **Enter you gemini api key in the env file**
+
+
+
+https://github.com/user-attachments/assets/83ff39ec-024d-4fc0-b386-a976114e7d04
+
+
