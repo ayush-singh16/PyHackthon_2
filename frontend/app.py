@@ -28,9 +28,9 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 st.header("2. Enter Medical Report / Symptoms")
 medical_report_text = st.text_area(
-    "Describe the patient's symptoms, relevant medical history, or details from a medical report:",
+    "Briefly describe the patient's symptoms, relevant medical history, or details from a medical his/her report:",
     height=200,
-    placeholder="e.g., 'Patient presents with persistent cough and shortness of breath for 3 days. Fever of 101°F. No known allergies. Non-smoker. X-ray taken today.'"
+    placeholder="e.g., 'Ex- Patient presents with persistent cough and shortness of breath for 3 days. Fever of 101°F. No known allergies. Non-smoker. X-ray taken today.'"
 )
 
 # --- Prediction Button ---
@@ -40,7 +40,7 @@ if st.button("Get AI Diagnosis"):
     elif not medical_report_text.strip():
         st.error("Please provide a medical report or symptoms.")
     else:
-        with st.spinner("Analyzing image and report with AI... This may take a moment."):
+        with st.spinner("Analyzing...|.. This may take a moment."):
             try:
                 # Prepare image for sending to FastAPI
                 files = {'image': (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
