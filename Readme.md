@@ -26,6 +26,6 @@ AI-Powered Medical Diagnosis
 
 2. **Start frontend:**
    ```bash
-   python app.py
+   streamlit run app.py
    ```
 3. **Enter you gemini api key in the env file**
