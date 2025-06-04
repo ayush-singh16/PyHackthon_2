@@ -19,16 +19,18 @@ AI-Powered Medical Diagnosis
 
 ## Running
 
-1. **Start backend:**
+1. **Enter you gemini api key in the env file**
+   
+2. **Start backend:**
    ```bash
    python main.py
    ```
 
-2. **Start frontend:**
+3. **Start frontend:**
    ```bash
    streamlit run app.py
    ```
-3. **Enter you gemini api key in the env file**
+
 
 
 
